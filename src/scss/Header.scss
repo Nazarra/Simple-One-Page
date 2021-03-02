@@ -1,0 +1,195 @@
+@import "./setting/_screenRresolution.scss";
+
+
+@keyframes logo_animation {
+  0% {
+  }
+  10% {
+    text-shadow: none;
+  }
+  10.1% {
+    text-shadow: 2px 2px 3px $animationColor;
+    color: $animationColor;
+  }
+  10.2% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  20% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  20.1% {
+    text-shadow: 2px 2px 3px $animationColor;
+    color: $animationColor;
+  }
+  20.6% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  30% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  30.1% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor;
+  }
+  30.5% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  30.6% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  45% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  45.1% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  50% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  55% {
+    color: $main_color;
+    text-shadow: 2px 2px 3px $main_color;
+  }
+  55.1% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  57% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  57.1% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor;
+  }
+  60% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  60.1% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  65% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  65.1% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor;
+  }
+  75% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  75.1% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  77% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  77.1% {
+    color: $animationColor;
+    text-shadow: 2px 2px 3px $animationColor;
+  }
+  85% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  85.1% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  86% {
+    color: $navigation_color;
+    text-shadow: none;
+  }
+  86.1% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $animationColor2;
+  }
+  100% {
+    color: $animationColor2;
+    text-shadow: 2px 2px 3px $main_color;
+  }
+}
+
+
+
+
+.Header {
+  @media #{$desktop, $tablet}{
+    .phone {
+      display: none;
+    }
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px -2px $contact_font_color;
+    .logo {
+      margin-left: 8.38%;
+      font-size: 2rem;
+      color: $main_color;
+      font-family: $font-alt;
+      text-align: left;
+      text-shadow: 2px 2px 3px $main_color;
+      text-decoration: none;
+      animation: logo_animation 4s linear both;
+    }
+    nav {
+      margin-right: 8.38%;
+    }
+    .tablet_and_deskop{
+      position: fixed;
+      right: 0;
+    }
+  }
+  @media #{$phone}{
+    .tablet_and_deskop {
+      display: none;
+    }
+    width: calc(100vw - 15px);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    .logo {
+      margin-top: 25%;
+      font-size: 3rem;
+      color: $navigation_color;
+      font-family: $font-alt;
+      text-align: left;
+      text-decoration: none;
+      animation: logo_animation 6s linear both;
+    }
+    nav {
+      //display: none;
+      position: fixed;
+      height: 80vh;
+      width: 60vw;
+      left: 0;
+      top: 10px;
+      background-color: $background_color;
+    }
+    .hamburger_container {
+      position: fixed;
+      left: 0;
+
+    }
+
+  }
+}
+

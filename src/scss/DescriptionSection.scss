@@ -1,0 +1,124 @@
+$background_image: url("../assets/Background.png");
+
+.description{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 6.5rem;
+  .store_advertising{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35.6rem;
+    align-items: center;
+    background-image: $background_image;
+    background-size: 100% 80%;
+    background-position: 50% 160%;
+    background-repeat: no-repeat;
+    h1{
+
+      font-size: 2.5rem;
+      font-family:$font-alt;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-size: 0.8rem;
+      font-family: $font-base;
+      font-weight: revert;
+      margin-bottom: 1.9rem;
+    }
+    a{
+      display: block;
+      background-color:$main_color ;
+      height: 3.35rem ;
+      width: 22rem;
+      border-radius: 40px;
+      color: white;
+      text-align: center;
+      line-height: 3.35rem ;
+      text-decoration: none;
+    }
+
+  }
+  .description_icon {
+    width: 100%;
+    height: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-top: 5rem;
+      font-family: $font-alt;
+      font-size: 1.8rem;
+      font-weight: revert;
+    }
+
+    .icon_container {
+      width: 38.85rem;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .Icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 8.5rem;
+        height: 8.5rem;
+        text-align: center;
+        div:before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 100%;
+          z-index: -1;
+        }
+
+        img {
+          position: relative;
+          left: 20px;
+          margin-bottom: 1rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          z-index: 2;
+        }
+
+        h3 {
+          font-size: 1rem;
+          font-family: $font-alt;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          font-family: $font-alt;
+          font-weight: 600;
+          color: $navigation_color;
+          width: 70%;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    .first {
+      div:before {
+        background-color: $first_decoration_color;
+      }
+    }
+    .second{
+      div:before {
+        background-color: $main_color;
+      }
+    }
+    .third{
+      div:before {
+        background-color: $secodn_decoration_color;
+      }
+    }
+  }
+}

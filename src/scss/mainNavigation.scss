@@ -1,0 +1,58 @@
+@import "./setting/_screenRresolution.scss";
+
+.navigation {
+  @media #{$desktop,$tablet}{
+    width: 35%;
+    height: 100%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150%;
+        height: 100%;
+      }
+
+      div:hover {
+        box-shadow: 0 6px 2px -2px $main_color;
+
+        a {
+          color: black;
+        }
+      }
+
+      a {
+        color: $navigation_color;
+        text-decoration: none;
+        font-family: $font-base;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  @media #{$phone} {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+  ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    div{
+      padding-top: 8%;
+      padding-left: 5%;
+      a{
+        color: $navigation_color;
+        text-decoration: none;
+        font-family: $font-base;
+        font-size: 1rem;
+        border-bottom: 3px solid $main_color;
+      }
+    }
+  }
+
+  }
+}
